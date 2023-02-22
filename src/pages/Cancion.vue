@@ -80,7 +80,6 @@ export default {
             return this.$route.params.id.toString()
         },
         getCancion(){
-            
             endpoints.getCancion(this.id).then((cancion) => {
                 this.cancion = cancion
             })
